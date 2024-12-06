@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  
+  button {
+    border-radius: 15px;
+    background-color: #3EB595;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  img {
+    filter: blur(2px);
+  }
+  img:hover {
+    filter: none;
+  }
+  
+  a {
+    transition: color 0.5s ease;
+  }
+  a:hover {
+    color: #FF5733;
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
+  
+  @media print {
+    body {
+      font-family: serif;
+      margin: 0.5in;
+    }
+    img {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+    a::after {
+      content: " (" attr(href) ") ";
+    }
+    @page {
+      size: A4;
+      margin: 0.5in;
+    }
+  }
+  
